@@ -3,12 +3,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import AuthRoute from '../componant/AuthRoute'
 import Layout from '../componant/Layout'
-import ProtectMode from '../componant/ProtectMode'
 import AuthContextPorvder from '../contaxt/authContextPorvder'
 import Home from '../pages/Home/Home'
 import Login from '../pages/Login/Login'
 import PostDetils from '../pages/PostDetils/PostDetils'
-import Rigister from '../pages/Rigister/Rigister'
+import Register from '../pages/Register/Register'
 import Profile from '../pages/Profile/Profile'
 import ProtectMode from "../componant/ProtectMode"
 
@@ -19,7 +18,7 @@ export default function App() {
     {index:true ,element : <Login/>}, 
     {path : "home" ,element : <ProtectMode> <Home/></ProtectMode> }, 
     {path: "login" ,element : <AuthRoute> <Login/> </AuthRoute>}, 
-    {path : "rigister" ,element :<AuthRoute> <Rigister/> </AuthRoute>}, 
+    {path : "rigister" ,element :<AuthRoute> <Register/> </AuthRoute>}, 
     {path : "profile" ,element : <ProtectMode> <Profile/> </ProtectMode>}, 
     {path : "PostDetils/:postid" ,element :<ProtectMode> <PostDetils/> </ProtectMode>}, 
     

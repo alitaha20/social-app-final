@@ -40,7 +40,7 @@ const schema = z
     },
   );
 
-export default function Rigister() {
+export default function Register() {
   const [show, setShow] = useState(false);
   const [messageError, setMessageError] = useState();
   const [messageScuss, setMessageScuss] = useState();
