@@ -65,6 +65,8 @@ export default function Register() {
   });
 
   async function sendDataTo(values) {
+
+    console.log(values)
     try {
       const {data} = await axios(`${import.meta.env.VITE_API_URL}/users/signup`, {
         method: "POST",
@@ -74,7 +76,7 @@ export default function Register() {
       setMessageScuss(data?.message);
 
       setTimeout(() => {
-        router("/login");
+        router("/Login");
       }, 2000);
     } catch (error) {
       setMessageError(error.response.data.message);
