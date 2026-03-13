@@ -9,7 +9,8 @@ import Home from '../pages/Home/Home'
 import Login from '../pages/Login/Login'
 import PostDetils from '../pages/PostDetils/PostDetils'
 import Rigister from '../pages/Rigister/Rigister'
-import Profile from '../pages/profile/profile'
+import Profile from '../pages/Profile/Profile'
+import ProtectMode from "../componant/ProtectMode"
 
 export default function App() {
 
@@ -19,7 +20,7 @@ export default function App() {
     {path : "home" ,element : <ProtectMode> <Home/></ProtectMode> }, 
     {path: "login" ,element : <AuthRoute> <Login/> </AuthRoute>}, 
     {path : "rigister" ,element :<AuthRoute> <Rigister/> </AuthRoute>}, 
-    {path : "profile" ,element :<ProtectMode><Profile/>  </ProtectMode>}, 
+    {path : "profile" ,element : <ProtectMode> <Profile/> </ProtectMode>}, 
     {path : "PostDetils/:postid" ,element :<ProtectMode> <PostDetils/> </ProtectMode>}, 
     
   ]
