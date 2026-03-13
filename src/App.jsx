@@ -1,7 +1,9 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
-import AuthRoute from '../componant/authRoute'
+import AuthRoute from '<div styleName={} />
+<componant />
+<A></A>uthRoute'
 import Layout from '../componant/Layout'
 import ProtectMode from '../componant/protectMode'
 import AuthContextPorvder from '../contaxt/authContextPorvder'
