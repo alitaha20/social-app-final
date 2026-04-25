@@ -163,7 +163,7 @@ export default function ProdactCard({ post, commetn }) {
 
   return (
     <>
-      <Card className="mt-3 w-2/4 m-auto mb-3">
+      <Card className="mt-3 md:w-2/4 xs:w-full m-auto mb-3 ">
 
         <CardHeader className="justify-between">
 

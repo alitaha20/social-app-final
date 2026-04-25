@@ -135,7 +135,6 @@ mutationFn: creatPost ,
 onSuccess : (data)=> {
 
 
-  console.log(data)
 clearImage()
 
 refetch()
